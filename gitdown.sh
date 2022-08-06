@@ -11,8 +11,6 @@
 #  diretório dado um repositório do github.
 #
 # Exemplos:
-#      $ ./gitdown.sh -h
-#      Nesse caso o gitdown só vai mostrar o seu menu de ajuda
 #      
 #      $ ./gitdown.sh https://github.com/pauloh-alc/Estrutura-de-dados 5-Pilha
 #      Nesse caso o gitdown vai realizar o download de toda pasta "5-Pilha" e
