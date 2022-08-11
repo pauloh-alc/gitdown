@@ -5,21 +5,33 @@ gitdown é capaz de realizar o download de um diretório ou arquivo específico 
 
 ## Tecnologia
 
-gitdown utiliza --shell-scrit-- como base.
+- Shell Script
 
 ## Sinopse
 ```sh
 user@localhost:~$ ./gitdown.sh [repository URL] [file or directory]
 ```
 ## Exemplos
--  download de um diretório
+- Modo de uso
 ```sh
-user@localhost:~$ ./gitdown.sh https://github.com/pauloh-alc/AVL-tree.git list-of-questions
+git clone https://github.com/pauloh-alc/gitdown
+cd gitdown
 ```
-
-- download de um arquivo (necessário informar sua extensão)
+- Verifique se o arquivo gitdown.sh possui permissão de execução
 ```sh
-user@localhost:~$ ./gitdown.sh https://github.com/pauloh-alc/AVL-tree.git avl.pdf
+ls -l gitdown.sh
+```
+- Caso o script gitdown.sh não possua permissão de execução. Dê permissão
+```sh
+chmod +x gitdown.sh
+```
+-  para download de um diretório
+```sh
+./gitdown.sh https://github.com/pauloh-alc/AVL-tree.git list-of-questions
+```
+- para download de um arquivo (necessário informar sua extensão)
+```sh
+./gitdown.sh https://github.com/pauloh-alc/AVL-tree.git avl.pdf
 ```
 
 ## Testado
@@ -27,6 +39,6 @@ user@localhost:~$ ./gitdown.sh https://github.com/pauloh-alc/AVL-tree.git avl.pd
 
 ## Licença
 
-MIT
+GLPv3
 
 **Free Software**
